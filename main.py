@@ -1,4 +1,4 @@
-import time 
+#import time 
 import replit
 from termcolor import colored
 
@@ -9,7 +9,13 @@ from Monster import *
 
 #--------------------------------------------------------------------------------#
 
+sBean_1 = SmolBean()
 
+print("Monster name:", sBean_1.name)
+
+
+
+"""
 slowprint("Welcome to Unconventional Conventions!", 0.1)
 
 input("press enter")
@@ -53,3 +59,4 @@ input("")
 
 replit.clear()
 
+"""

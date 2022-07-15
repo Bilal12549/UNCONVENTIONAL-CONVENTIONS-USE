@@ -1,26 +1,19 @@
 import random
 
+class Monster():
 
-class Monster:
-  def __init__(self):
-    pass
+  def __init__(self, name, hp, attack, ability):
+    self.name = name
+    self.hp = hp
+    self.attack = attack
+    self.ability = ability
 
+    def update(player):
+      pass
 
 
 
 class SmolBean(Monster):
-  def __init__(self,
-                name = "Smol Bean",
-                hp= 5,
-                atk= random.randint(1,3),
-                ability = "Mushy"):
-
-    self.name = name
-    self.hp = hp
-    self.atk = atk
-    self.ability = ability
-
-
-  def update():
-    number = random.randint(1,10)
+  def __init__(self):
+    Monster.__init__(self, "SmolBean", 100, 20, "Mushy")
     

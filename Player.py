@@ -1,41 +1,54 @@
 import random
 
-
 class Player:
-    def __innit__(self, name, inventory, hp=100, atk=100):
 
-        self.name = name
-        self.hp = hp
-        self.atk = atk
-        self.inventory = inventory
+  def manoeuvre():
+    print("manoeuee!!")
+  
+  def fight():
+    print("FIGHT")
+    
+  def eat():
+    print ("munch")
+  
+  def boon():
+    print("splaboon2")
 
-    def update(enemy):
-        action = input("""What would you like to do?:
-                                                1. Manoeuvre
-                                                2. Fight
-                                                3. Eat
-                                                4. Boon""")
+    
+  def __init__(self, name, inventory, hp=100, atk=100):
 
-        def manoeuvre():
-            pass
+    self.name = name
+    self.hp = hp
+    self.atk = atk
+    self.inventory = inventory
+  
+  
+  
 
-        def fight():
-            pass
+  def update(self, enemy):
+    action = input("""What would you like to do?: \n1. Manoeuvre\n2. Fight\n3. Eat \n4. Boon""")
 
-        def eat():
-            pass
+    if action == 1:
+      self.manoeuvre()
 
-        def boon():
-            pass
+    elif action == 2:
+      self.fight()
 
-        if action == 1:
-            manoeuvre()
+    elif action == 3:
+      self.eat()
+      
+    elif action == 4:
+      self.boon()
 
-        elif action == 2:
-            fight()
-
-        elif action == 3:
-            eat()
-
-        elif action == 4:
-            boon()
+      
+  def manoeuvre():
+    print("manoeuee!!")
+  
+  def fight():
+    print("FIGHT")
+    
+  def eat():
+    print ("munch")
+  
+  def boon():
+    print("splaboon2")
