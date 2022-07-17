@@ -3,42 +3,45 @@ import replit
 from termcolor import colored
 
 
+from Monster import *
+from Player_items import *
 from Player import *
 from SlowPrint import *
-from Monster import *
+
 
 #--------------------------------------------------------------------------------#
 
-sBean_1 = SmolBean()
-
-print("Monster name:", sBean_1.name)
-
-
-
-"""
 slowprint("Welcome to Unconventional Conventions!", 0.1)
-
 input("press enter")
-
 replit.clear()
+
 
 name = input("What is your name?: ")
 
 
+wooden_spork_1 = wooden_spork()
+nothing = nothing()
+
 inventory = {
-  "item 1: ": "Wooden Spork",
-  "item 2: ": ".",
-  "item 3: ": ".",
-  "item 4: ": ".",
-  "item 5: ": ".",
+  "item 1: " : wooden_spork_1,
+  "item 2: " : nothing,
+  "item 3: " : nothing,
+  "item 4: " : nothing,
+  "item 5: " : nothing
 }
+
+
+player = Player(name, inventory, 100, 20)
+
 
 replit.clear()
 
 print("Inventory list:")
 for k, v in inventory.items():
-  print(k, v)
+  print(k, v.name)
 
+
+"""
 input("Press enter to continue")
 replit.clear()
 
@@ -60,3 +63,5 @@ input("")
 replit.clear()
 
 """
+
+sBean_1 = SmolBean()

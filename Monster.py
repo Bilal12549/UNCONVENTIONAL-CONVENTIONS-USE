@@ -8,12 +8,15 @@ class Monster():
     self.attack = attack
     self.ability = ability
 
-    def update(player):
+    def update(self, player):
       pass
+
+
+
 
 
 
 class SmolBean(Monster):
   def __init__(self):
-    Monster.__init__(self, "SmolBean", 100, 20, "Mushy")
+    Monster.__init__(self, "SmolBean", 40, random.randint(5,10), "Mushy")
     

@@ -5,17 +5,18 @@ class Player:
   def manoeuvre():
     print("manoeuee!!")
   
-  def fight():
-    print("FIGHT")
+  def fight(self, enemy):
+    print("ATTACK:")
+    tool = input("what would you like to attack with:")
     
   def eat():
     print ("munch")
   
   def boon():
-    print("splaboon2")
+    print("splaboon")
 
     
-  def __init__(self, name, inventory, hp=100, atk=100):
+  def __init__(self, name, inventory, hp, atk):
 
     self.name = name
     self.hp = hp
@@ -26,7 +27,7 @@ class Player:
   
 
   def update(self, enemy):
-    action = input("""What would you like to do?: \n1. Manoeuvre\n2. Fight\n3. Eat \n4. Boon""")
+    action = int(input("What would you like to do?: \n1. Manoeuvre\n2. Fight\n3. Eat \n4. Boon"))
 
     if action == 1:
       self.manoeuvre()
@@ -39,16 +40,3 @@ class Player:
       
     elif action == 4:
       self.boon()
-
-      
-  def manoeuvre():
-    print("manoeuee!!")
-  
-  def fight():
-    print("FIGHT")
-    
-  def eat():
-    print ("munch")
-  
-  def boon():
-    print("splaboon2")
