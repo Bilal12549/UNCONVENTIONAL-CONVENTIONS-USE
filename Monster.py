@@ -8,8 +8,10 @@ class Monster():
     self.attack = attack
     self.ability = ability
 
-    def update(self, player):
-      pass
+
+  
+  def update(self, player):
+    pass
 
 
 

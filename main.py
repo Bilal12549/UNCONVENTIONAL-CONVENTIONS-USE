@@ -11,6 +11,7 @@ from SlowPrint import *
 
 #--------------------------------------------------------------------------------#
 
+
 slowprint("Welcome to Unconventional Conventions!", 0.1)
 input("press enter")
 replit.clear()
@@ -18,27 +19,16 @@ replit.clear()
 
 name = input("What is your name?: ")
 
+ 
 
-wooden_spork_1 = wooden_spork()
-nothing = nothing()
-
-inventory = {
-  "item 1: " : wooden_spork_1,
-  "item 2: " : nothing,
-  "item 3: " : nothing,
-  "item 4: " : nothing,
-  "item 5: " : nothing
-}
-
-
-player = Player(name, inventory, 100, 20)
+player = Player(name, 100, 20)
 
 
 replit.clear()
 
 print("Inventory list:")
-for k, v in inventory.items():
-  print(k, v.name)
+
+player.inventory_list()
 
 
 """
