@@ -19,6 +19,6 @@ class wooden_spork(item):
 
 class nothing(item):
   def __init__(self):
-    item.__init__(self, ".", 0, 0, "Nothing, to see here. . .")
+    item.__init__(self, "", 0, 0, "Nothing, to see here. . .")
 
 #----------#

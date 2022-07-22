@@ -16,42 +16,50 @@ class Player:
   wooden_spork_1 = wooden_spork()
   nothing = nothing()
   
-  inventory = {
-    "Item 1:" : wooden_spork_1,
-    "Item 2:" : nothing,
-    "Item 3:" : nothing,
-    "Item 4:" : nothing,
-    "Item 5:" : nothing
-  }
+  inventory = [
+    wooden_spork_1,
+    nothing,
+    nothing,
+    nothing,
+    nothing
+  ]
 
 
   def inventory_list(self):
-    for k, v in self.inventory.items():
-      print(k, v.name)
+    for i in range(len(self.inventory)):
+      print(f"Item {i+1}: {self.inventory[i].name}")
+
+
+
+
   
-  def manoeuvre():
+  def manoeuvre(self):
     print("manoeuee!!")
   
   def fight(self, enemy):
     print("ATTACK:")
 
 
-    slowprint("What would you like to attack with:")
-    inventory_list()
+    print("What would you like to attack with:")
+    self.inventory_list()
 
     print("(input the number of the item you would like to use)")
     tool = int(input(":  "))
+    
 
     
 
 
     
-  def eat():
+  def eat(self):
     print ("munch")
   
-  def boon():
+  def boon(self):
     print("splaboon")
   
+
+
+
 
 
   

@@ -1,4 +1,4 @@
-#import time 
+import time 
 import replit
 from termcolor import colored
 
@@ -11,11 +11,11 @@ from SlowPrint import *
 
 #--------------------------------------------------------------------------------#
 
-
+"""
 slowprint("Welcome to Unconventional Conventions!", 0.1)
 input("press enter")
 replit.clear()
-
+"""
 
 name = input("What is your name?: ")
 
