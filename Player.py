@@ -45,9 +45,12 @@ class Player:
 
     print("(input the number of the item you would like to use)")
     tool = int(input(":  "))
-    
+    tool -= 1
+    tool_use = self.inventory[tool]
 
-    
+    slowprint(tool_use.damage_message, 0.1)
+
+    enemy.hp -= tool_use.damage
 
 
     
@@ -55,7 +58,7 @@ class Player:
     print ("munch")
   
   def boon(self):
-    print("splaboon")
+    print("boonito")
   
 
 
@@ -67,13 +70,13 @@ class Player:
     action = int(input("What would you like to do?: \n1. Manoeuvre\n2. Fight\n3. Eat \n4. Boon"))
 
     if action == 1:
-      self.manoeuvre()
+      self.manoeuvre(enemy)
 
     elif action == 2:
-      self.fight()
+      self.fight(enemy)
 
     elif action == 3:
-      self.eat()
+      self.eat(enemy)
       
     elif action == 4:
-      self.boon()
+      self.boon(enemy)

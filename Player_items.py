@@ -1,6 +1,6 @@
 class item:
 
-  def __init__(self, name, damage, heal, description):
+  def __init__(self, name, damage, damage_message, heal, heal_message, description):
     self.name = name
     self.damage = damage
     self.heal = heal
@@ -12,13 +12,15 @@ class item:
 
 class wooden_spork(item):
   def __init__(self):
-    item.__init__(self, "wooden spork", 12, 1, "Not the best, but at least it's not nothing.")
+    item.__init__(self, "wooden spork", 12, f"You poke your enemy with courageousness. You deal {self.damage} damage.", 1,"mm woody. . .", "Not the best, but at least it's not nothing.")
+
+
 
 #----------#
 
 
 class nothing(item):
   def __init__(self):
-    item.__init__(self, "", 0, 0, "Nothing, to see here. . .")
+    item.__init__(self, "", 0, "Nothing happens", 0, "Does not and has not quenched anything", "Nothing, to see here. . .")
 
 #----------#
