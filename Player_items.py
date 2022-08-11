@@ -12,7 +12,7 @@ class item:
 
 class wooden_spork(item):
   def __init__(self):
-    item.__init__(self, "wooden spork", 12, f"You poke your enemy with courageousness. You deal {self.damage} damage.", 1,"mm woody. . .", "Not the best, but at least it's not nothing.")
+    item.__init__(self, "wooden spork", 12, f"You poke your enemy with courageousness. You deal {self.damage} damage.", 1, f"mm woody. . . You heal {self.heal} health.", "Not the best, but at least it's not nothing.")
 
 
 

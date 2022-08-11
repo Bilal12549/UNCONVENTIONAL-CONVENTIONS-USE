@@ -51,7 +51,7 @@ slowprint("Press enter to continue into the game. . . . .", 0.1)
 input("")
 
 replit.clear()
-
+eee
 """
 
 sBean_1 = SmolBean()

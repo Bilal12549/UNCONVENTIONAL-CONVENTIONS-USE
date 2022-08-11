@@ -34,28 +34,37 @@ class Player:
 
   
   def manoeuvre(self):
-    print("manoeuee!!")
+    print("MANOUEE:")
   
   def fight(self, enemy):
     print("ATTACK:")
 
-
     print("What would you like to attack with:")
     self.inventory_list()
 
-    print("(input the number of the item you would like to use)")
+    print("(Input the number of the item you would like to use)")
     tool = int(input(":  "))
     tool -= 1
     tool_use = self.inventory[tool]
 
-    slowprint(tool_use.damage_message, 0.1)
+    print(tool_use.damage_message)
 
     enemy.hp -= tool_use.damage
 
 
     
   def eat(self):
-    print ("munch")
+    print("Es hora de COMER:")
+
+    print("what would you like to eat:")
+    self.inventory_list()
+
+    print("(Input the number of the item you would like to eat)")
+    food = int(input(":  "))
+    food -= 1
+    food_use = self.inventory[food]
+
+    print(food_use.heal_message)
   
   def boon(self):
     print("boonito")
