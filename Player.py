@@ -65,7 +65,10 @@ class Player:
     food_use = self.inventory[food]
 
     print(food_use.heal_message)
-  
+
+    self.hp += food_use.heal
+
+    
   def boon(self):
     print("boonito")
   

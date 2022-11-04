@@ -31,11 +31,11 @@ print("Inventory list:")
 player.inventory_list()
 
 
-"""
+
 input("Press enter to continue")
 replit.clear()
 
-slowprint("Wait, Wait, Wait a minute minuite!", 0.1)
+slowprint("Wait, Wait, Wait a minute minute!", 0.1)
 time.sleep(0.5)
 
 slowprint("Was that a wooden spork!?", 0.1)
@@ -51,7 +51,6 @@ slowprint("Press enter to continue into the game. . . . .", 0.1)
 input("")
 
 replit.clear()
-eee
-"""
+
 
 sBean_1 = SmolBean()
