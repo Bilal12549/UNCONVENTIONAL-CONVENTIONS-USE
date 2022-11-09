@@ -10,7 +10,7 @@ class Item:
 #-------------------------------------------------------#
 
 
-class wooden_spork(Item):
+class Wooden_spork(Item):
   def __init__(self):
     Item.__init__(self, "wooden spork", 12, f"You poke your enemy with courageousness. You deal 12 damage.", 0.000001, f"mm woody. . . You heal 0.000001 health.", "Not the best, but at least it's not nothing.")
 
@@ -19,7 +19,7 @@ class wooden_spork(Item):
 #----------#
 
 
-class nothing(Item):
+class Nothing(Item):
   def __init__(self):
     Item.__init__(self, "", 0, "Nothing happens", 0, "Does not and has not quenched anything", "Nothing, to see here. . .")
 

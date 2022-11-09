@@ -2,15 +2,18 @@ import random
 
 class Monster():
 
-  def __init__(self, name, hp, attack, ability):
+  def __init__(self, name, hp, attack, abilities):
     self.name = name
     self.hp = hp
     self.attack = attack
-    self.ability = ability
+    self.abllities = abilities
+    
+    
 
 
   
   def update(self, player):
+    
     pass
 
 
@@ -20,5 +23,5 @@ class Monster():
 
 class SmolBean(Monster):
   def __init__(self):
-    Monster.__init__(self, "SmolBean", 40, random.randint(5,10), "Mushy")
+    Monster.__init__(self, "SmolBean", 40, random.randint(5,10), ["Mushy", "Sugar snap", "Vine wrap", "Legumes in a pod"])
     

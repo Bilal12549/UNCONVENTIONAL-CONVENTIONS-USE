@@ -13,8 +13,8 @@ class Player:
 
 
   
-  wooden_spork_1 = wooden_spork()
-  nothing = nothing()
+  wooden_spork_1 = Wooden_spork()
+  nothing = Nothing()
   
   inventory = [
     wooden_spork_1,
