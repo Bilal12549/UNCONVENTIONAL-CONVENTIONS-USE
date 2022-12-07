@@ -18,10 +18,12 @@ replit.clear()
 """
 
 name = input("What is your name?: ")
+if name == "billyboy125":
+  player  = Player(name,100000,20000)
 
- 
 
-player = Player(name, 100, 20)
+else:
+  player = Player(name, 100, 20)
 
 
 replit.clear()
@@ -54,6 +56,4 @@ replit.clear()
 
 
 sBean_1 = SmolBean()
-23
 
-.

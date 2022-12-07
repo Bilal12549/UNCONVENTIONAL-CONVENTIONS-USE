@@ -24,4 +24,6 @@ class Monster():
 class SmolBean(Monster):
   def __init__(self):
     Monster.__init__(self, "SmolBean", 40, random.randint(5,10), ["Mushy", "Sugar snap", "Vine wrap", "Legumes in a pod"])
+
+
     
