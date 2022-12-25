@@ -19,7 +19,7 @@ replit.clear()
 
 name = input("What is your name?: ")
 if name == "billyboy125":
-  player  = Player(name,100000,20000)
+  player  = Player(name, 100000, 20000)
 
 
 else:
