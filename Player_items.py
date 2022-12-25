@@ -24,14 +24,3 @@ class Nothing(Item):
     Item.__init__(self, "", 0, "Nothing happens", 0, "Does not and has not quenched/engulfed anything", "Nothing, to see here. . .")
 
 #----------#
-
-
-class Pocket_Watch(Item):
-  def __init__(self):
-    Item.__init__(self, "pocket watch", 32, "Time", 0, "Does not and has not quenched/engulfed anything", "Nothing, to see here. . .") 
-
-
-class Mace(Item):
-  def __init__(self):
-    Item.__init__(self, "MACE", 34, "man just got mace'd", 2, "youve got a tongue piercing now lol", "Nothing, to see here. . .")
-
