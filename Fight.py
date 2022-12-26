@@ -1,12 +1,12 @@
 import time
 
 def fight(player, enemy, w_msg):
-  while player.hp > 0
+  while player.hp > 0:
     player.update(enemy)
     time.sleep(2.5)
-    enemy.update(player)
     if enemy.hp <= 0:
       break
-  
+    enemy.update(player)
+    
   print(w_msg)
     
