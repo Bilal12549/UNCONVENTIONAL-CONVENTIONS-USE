@@ -56,7 +56,7 @@ class Player:
   def eat(self):
     print("Es hora de COMER:")
 
-    print("what would you like to eat:")
+    print("What would you like to eat:")
     self.inventory_list()
 
     print("(Input the number of the item you would like to eat)")
@@ -68,9 +68,6 @@ class Player:
 
     self.hp += food_use.heal
 
-    
-  def boon(self):
-    print("boonito")
   
 
 
@@ -79,16 +76,14 @@ class Player:
 
   
   def update(self, enemy):
-    action = int(input("What would you like to do?: \n1. Manoeuvre\n2. Fight\n3. Eat \n4. Boon"))
-
-    if action == 1:
-      self.manoeuvre(enemy)
-
-    elif action == 2:
-      self.fight(enemy)
-
-    elif action == 3:
-      self.eat(enemy)
-      
-    elif action == 4:
-      self.boon(enemy)
+    if self.hp <= 0:
+      slowprint("You are dead.", 0.05)
+      slowprint("MUHAHAUHAHAHAHUHAHAA", 0.05)
+    else:
+      print("What would you like to do? \n1. Fight\n2. Eat")
+      action = int(input(":  "))
+  
+      if action == 1:
+        self.fight(enemy)
+      elif action == 2:
+        self.eat()

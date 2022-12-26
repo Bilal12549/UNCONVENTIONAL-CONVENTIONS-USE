@@ -3,7 +3,9 @@ class Item:
   def __init__(self, name, damage, damage_message, heal, heal_message, description):
     self.name = name
     self.damage = damage
+    self.damage_message = damage_message
     self.heal = heal
+    self.heal_message = heal_message
     self.description = description
 
 
